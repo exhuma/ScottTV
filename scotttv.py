@@ -5,7 +5,7 @@ import subprocess
 import time
 import RPi.GPIO as GPIO
 
-subprocess.run(['setterm', '-blank', 'force'])  # doesn't capture output
+subprocess.check_call(['setterm', '-blank', 'force'])  # doesn't capture output
 
 #set up GPIO using BCM numbering
 
